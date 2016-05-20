@@ -6,11 +6,18 @@ using System.Web.Mvc;
 
 namespace ASPNET.Controllers
 {
-    public class HelloWorld : Controller
+    public class HelloWorldController : Controller
     {
-        public ActionResult Index()
+	// Get: /HelloWorld/
+        public string Index()
         {
-            return View ();
+            return "This is my default action";
+        }
+
+	// Get: /HelloWorld/Welcome/
+        public string Welcome()
+        {
+            return "Welcome action"; 
         }
     }
 }

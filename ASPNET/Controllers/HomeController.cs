@@ -19,6 +19,16 @@ namespace ASPNET.Controllers
 
 			return View ();
 		}
+
+		public ActionResult List()
+		{
+			List<string> foods = new List<string>();
+			foods.Add ("Burger");
+			foods.Add ("noodle");
+
+			ViewBag.ListFoods = foods;
+			return View ();
+		}
 	}
 }
 

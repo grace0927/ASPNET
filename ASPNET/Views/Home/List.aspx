@@ -6,6 +6,10 @@
 </head>
 <body>
 	<div>
-
+	<ul>
+	<% foreach(var food in ViewBag.ListFoods) {%>
+		<li><%: food %></li>
+	<% } %>
+	</ul>
 	</div>
 </body>
